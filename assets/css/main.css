@@ -10,6 +10,12 @@
 }
 
 
+h1 {
+    text-align: center;
+    padding: 50px;
+    background-color: #666;
+}
+
 /* Body styles */
 
 body {
@@ -74,17 +80,56 @@ section ul {
     margin-bottom: 10px;
 }
 
-
-/* Example styles */
-
-.example {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 15px;
+/* Styling for Installation section */
+section#Installation {
+    margin-top: 20px;
 }
 
-.example h3 {
+/* Styling for h2 headings inside Installation section */
+section#Installation h2 {
+    font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+}
+
+/* Styling for h3 headings inside Installation section */
+section#Installation h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Styling for each command container inside Installation section */
+section#Installation div {
+    margin-bottom: 15px;
+    position: relative;
+    padding-right: 120px; /* Added padding for space to accommodate the copy button */
+}
+
+/* Styling for command paragraphs inside Installation section */
+section#Installation div p {
+    font-size: 16px;
+    margin: 0;
+    background-color: #eeffcc;
+    padding: 10px; /* Added padding for better readability */
+    border-radius: 5px; /* Added rounded corners for a cleaner look */
+}
+
+/* Styling for the copy button */
+section#Installation .copy-button {
+    position: absolute;
+    right: 10px; /* Adjusted the position */
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Styling for hover effect on the copy button */
+section#Installation .copy-button:hover {
+    background-color: #0056b3;
 }

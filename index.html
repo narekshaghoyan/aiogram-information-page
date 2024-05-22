@@ -8,19 +8,21 @@
     <title>Aiogram Information</title>
 
     <link rel="icon" type="image/x-icon" href="./assets/images/aiogram-logo.png">
+    <link rel="stylesheet" href="assets/css/faq/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://github.com/aiogram/aiogram">Github</a>
-                </li>
-                <li>
-                    <a href="https://docs.aiogram.dev/en/latest/">Documentation</a>
-                </li>
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul id="nav-list">
+                <!-- Navigation items will be generated here -->
             </ul>
         </nav>
     </header>
@@ -28,11 +30,11 @@
     <section id="history">
         <h2>Aiogram History</h2>
         <p>Aiogram is a Python asynchronous library for developing Telegram bots. It is designed to be easy to use and understand, while also providing advanced features for more complex bot development.</p>
-        <p>Since its initial release, Aiogram has undergone several updates and improvements, making it one of the most popular choices for Telegram bot development in the Python community.</p>
+        <p>Since its initial release, Aiogram has undergone several updates and improvements, making it one of the most popular choices for Telegram bot development in the Python community. </p>
     </section>
 
-    <section id="information">
-        <h2>Information</h2>
+    <section id="information"> <!-- TODO: add why choose aiogram -->
+        <h2>Why choose aiogram?</h2>
         <p>Here you can find information about the features, usage, and installation of Aiogram.</p>
         <ul>
             <li>Feature 1</li>
@@ -41,18 +43,37 @@
         </ul>
     </section>
 
-    <section id="examples">
-        <h2>Examples</h2>
-        <p>Below are some examples demonstrating how to use Aiogram to create Telegram bots:</p>
-        <div class="example">
-            <h3>Example 1</h3>
-            <p>Description of example 1...</p>
+    <section id="Installation">
+        <h2>Installation</h2>
+    
+        <h3>From PyPI</h3>
+        <div>
+            <p>pip install -U aiogram</p>
+            <button class="copy-button" onclick="copyToClipboard('pip install -U aiogram', this)">Copy</button>
         </div>
-        <div class="example">
-            <h3>Example 2</h3>
-            <p>Description of example 2...</p>
+    
+        <h3>From Arch Linux Repository</h3>
+        <div>
+            <p>pacman -S python-aiogram</p>
+            <button class="copy-button" onclick="copyToClipboard('pacman -S python-aiogram', this)">Copy</button>
+        </div>
+    
+        <h2>Development build (3.x)</h2>
+    
+        <h3>From PyPI</h3>
+        <div>
+            <p>pip install -U aiogram</p>
+            <button class="copy-button" onclick="copyToClipboard('pip install -U aiogram', this)">Copy</button>
+        </div>
+    
+        <h3>From GitHub</h3>
+        <div>
+            <p>pip install https://github.com/aiogram/aiogram/archive/refs/heads/dev-3.x.zip</p>
+            <button class="copy-button" onclick="copyToClipboard('pip install https://github.com/aiogram/aiogram/archive/refs/heads/dev-3.x.zip', this)">Copy</button>
         </div>
     </section>
+    
 </body>
-
+    <script src="./assets/js/copy.js"></script>
+    <script src="assets/js/header.js"></script>
 </html>
