@@ -1,0 +1,43 @@
+/* page.css */
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* Style for the image container */
+.answer_img {
+    margin: 100px auto; /* Center the image horizontally */
+    text-align: center; /* Center the image itself */
+}
+
+/* Style for the question */
+.Question {
+    margin: 40px auto; /* Center the question horizontally */
+    text-align: center; /* Center the text */
+    font-family: 'Arial', sans-serif; /* Use a sans-serif font */
+    color: #333; /* Dark gray color for the text */
+}
+
+/* Style for the link */
+.Question a {
+    color: #007bff; /* Blue color for the link */
+    text-decoration: none; /* Remove the underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.Question a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+p {
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}

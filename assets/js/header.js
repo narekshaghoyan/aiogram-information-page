@@ -20,6 +20,23 @@ function generateNavItems() {
     });
 }
 
+// Function to add logo to header
+function addLogo() {
+    const header = document.getElementById('main-header');
+    const logoContainer = document.createElement('div');
+    logoContainer.classList.add('logo');
+    const logoLink = document.createElement('a');
+    logoLink.href = './index.html'; // Replace with the actual URL you want to link to
+    const logoImg = document.createElement('img');
+    logoImg.src = 'assets/images/github.png'; // Replace with actual path to your logo
+    logoImg.alt = 'Logo';
+    logoLink.appendChild(logoImg); // Append the <img> element to the <a> element
+    logoContainer.appendChild(logoLink); // Append the <a> element to the logoContainer
+    header.insertBefore(logoContainer, header.firstChild);
+}
+
+
 window.onload = (event) => {
+    addLogo();
     generateNavItems();
 };
